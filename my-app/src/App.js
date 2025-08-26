@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import { AppBar, Toolbar, Typography, Button, Stack} from '@mui/material'
 import AppAppBar from './components/AppAppBar';
+import MainContent from './components/MainContent';
+import { Container } from '@mui/material';
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        {/* <AppBar position="static">
-          <Toolbar color = 'black'>
-            <Typography variant="title" color="inherit">
-           </Typography>
-           <Stack spacing={2} direction="row-reverse">
-            <Button variant='outlined' color='white'>Games</Button>
-            <Button variant='outlined' color='white'>Event Organization</Button>
-            <Button variant='outlined' color='white'>Illustration</Button>
-            <Button variant='outlined' color='white'>About</Button>
-           </Stack>
-          </Toolbar>
-        </AppBar> */}
-        <AppAppBar></AppAppBar>
+        <AppAppBar/>
+        <Container
+        maxWidth="lg"
+        component="main"
+        sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4 }}>
+          <MainContent/>
+      </Container>
+          
+        
       </div>
     );
   }
