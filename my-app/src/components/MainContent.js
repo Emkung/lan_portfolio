@@ -1,27 +1,32 @@
 import * as React from 'react';
 import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled } from '@mui/material';
+import rop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/rop.png';
+import frog from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/frog.png';
+import npip from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/npip.png';
+import gpop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/gpop.png';
 
 const cardData = [
     {
-    img: 'my-app/public/rop.png',
-    title: 'Rites of Purgatory',
-    description:
-      'im lazy rn',
-    },
-    {
-    img: 'C:/Users/imlku/Documents/lan_portfolio/my-app/public/with title.png',
+    img: frog,
     title: 'Frogmageddon',
+    role:'Lead UI/UX Artist',
     description:
       'im lazy rn',
     },
     {
-    img: 'C:/Users/imlku/Documents/lan_portfolio/my-app/public/with title.png',
+    img: npip,
     title: 'No Party in Paradise',
     description:
       'im lazy rn',
     },
     {
-    img: 'C:/Users/imlku/Documents/lan_portfolio/my-app/public/with title.png',
+    img: rop,
+    title: 'Rites of Purgatory',
+    description:
+      'im lazy rn',
+    },
+    {
+    img: gpop,
     title: 'Duchess Grizabella Nightfire99 in: Prom Panic at Bubblegum Island!',
     description:
       'im lazy rn',
@@ -91,7 +96,7 @@ export default function MainContent() {
         </Typography>
         <Typography>Stay in the loop with the latest about our products</Typography>
       </div>
-      <Box
+      {/* <Box
         sx={{
           display: { xs: 'flex', sm: 'none' },
           flexDirection: 'row',
@@ -100,9 +105,8 @@ export default function MainContent() {
           overflow: 'auto',
         }}
       >
-        <IconButton size="small" aria-label="RSS feed">
-        </IconButton>
-      </Box>
+      </Box> */}
+      <Typography variant='h2'>Games</Typography>
       <Box
         sx={{
           display: 'flex',
