@@ -3,13 +3,12 @@ import { Toolbar,
   AppBar,
    Typography,
     Button, 
-    Divider, 
     Box, 
-    Container, 
-    MenuItem, 
-    Drawer, 
+    Container,  
     alpha, 
-    styled} from '@mui/material';
+    styled } from '@mui/material';
+    import {Link} from 'react-router-dom';
+
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -26,6 +25,8 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   boxShadow: (theme.vars || theme).shadows[1],
   padding: '8px 12px',
 }));
+
+
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -49,16 +50,19 @@ export default function AppAppBar() {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" color="info" size="small" component={Link} to={'/'}>
+                Home
+              </Button>
+              <Button variant="text" color="info" size="small" component={Link} to={'/games'}>
                 Games
               </Button>
-              <Button variant="text" color="info" size="small">
-                Event Organization
+              <Button variant="text" color="info" size="small" component={Link} to={'/event'}>
+                Events
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" color="info" size="small" component={Link} to={'/other'}>
                 Other
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" color="info" size="small" component={Link} to={'/about'}>
                 About
               </Button>
             </Box>
