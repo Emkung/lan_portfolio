@@ -13,6 +13,7 @@ import screen6 from '../image/game asset img/frog/screenshots/screen6.png';
 import screen7 from '../image/game asset img/frog/screenshots/screen7.png';
 
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
+import YouTube from 'react-youtube';
 
 const PageData = 
     {
@@ -44,6 +45,15 @@ const StyledDiv = styled('div')(({ theme }) => ({
     overflow: 'hidden'
   }))
 
+const vidOptions = {
+  height: '390',
+  width: '640',
+  playerVars: {
+    autoplay: 1,
+    controls: 1,
+  },
+};
+
 export default function MainContent() {
   const [focusedCardIndex, setFocusedCardIndex] = React.useState(null);
 
@@ -61,7 +71,7 @@ export default function MainContent() {
 
   return (
     
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, width: '100%' }}>
       <Typography style={{fontFamily:"Metal Mania"}} variant='h1'>{PageData.title}</Typography>
       <Grid container>
         <Grid item size={{ xs: 12, md: 3 }}>
@@ -84,7 +94,7 @@ export default function MainContent() {
       <Typography variant='h5'>{PageData.blurb}</Typography>
       <Typography variant='h3'>Process</Typography>
       <Grid container spacing={2}>
-        <Grid item size={{ xs: 2, sm: 7, md: 6 }}>
+        <Grid item size={{ xs: 12, sm: 6, md: 6 }}>
             <Typography variant='h4'>UI/UX</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
             <Typography variant='h4'>Productions</Typography>
@@ -92,7 +102,7 @@ export default function MainContent() {
             <Typography variant='h4'>Accolades</Typography>
             <Typography variant='h6'>{PageData.acolades}</Typography>
         </Grid>
-        <Grid item size={{ xs: 2, sm: 3, md: 6 }}>
+        <Grid item size={{ xs: 12, sm: 6, md: 6 }}>
           <StyledDiv>
           <StyledImgLst cols={2}>
             {PageData.screenshots.map((item) => (
@@ -104,31 +114,29 @@ export default function MainContent() {
           </StyledDiv>
         </Grid>
       </Grid>
-      <iframe 
-        width="560" 
-        height="315" 
-        src='https://youtu.be/SJQMZu2K6cQ?si=Ncs77j80ukgsq2fN'
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; 
-        autoplay; 
-        clipboard-write; 
-        encrypted-media; 
-        gyroscope; 
-        picture-in-picture; 
-        web-share" allowfullscreen></iframe>
+      <YouTube videoId="SJQMZu2K6cQ" options={vidOptions} id="video"/>
       
-      
-      <Typography variant='h3'>Assets</Typography>
-
       <StyledDiv>
-      <StyledImgLst cols={2}>
-        {PageData.assets.map((item) => (
-          <ImageListItem key={item}>
-            <img src={item}/>
-          </ImageListItem>
-        ))}
-      </StyledImgLst >
+        <Box sx={{
+          background: '#b0c8b8',
+          width: "99.7vw",
+          height: '220vh',
+          position: "absolute",
+          left: "50%",
+          right: "50%",
+          marginLeft: "-50vw",
+          marginRight: "-50vw",
+          boxSizing: "border-box",
+          zIndex: -1
+        }}/>
+        <Typography variant='h3' sx={{ position: 'relative', top: '25px', height: '100px' }}>Assets</Typography>
+        <StyledImgLst cols={1}>
+          {PageData.assets.map((item) => (
+            <ImageListItem key={item}>
+              <img src={item}/>
+            </ImageListItem>
+          ))}
+        </StyledImgLst >
       </StyledDiv>
     </Box>
   );

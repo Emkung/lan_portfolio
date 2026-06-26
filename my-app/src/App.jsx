@@ -14,12 +14,12 @@ import {Routes, Route} from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{ width: '100%' }}>
         <AppAppBar/>
         <Container
           maxWidth="lg"
           component="main"
-          sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4 }}>
+          sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4, width: '100%' }}>
           <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/games" element={<GamesPage />}/>
