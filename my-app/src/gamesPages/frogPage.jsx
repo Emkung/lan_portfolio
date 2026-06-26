@@ -113,13 +113,13 @@ export default function MainContent() {
           </StyledImgLst >
           </StyledDiv>
         </Grid>
+        <YouTube videoId="SJQMZu2K6cQ" options={vidOptions} id="video"/>
       </Grid>
-      <YouTube videoId="SJQMZu2K6cQ" options={vidOptions} id="video"/>
       
       <StyledDiv>
         <Box sx={{
           background: '#b0c8b8',
-          width: "99.7vw",
+          width: "100%",
           height: '220vh',
           position: "absolute",
           left: "50%",
