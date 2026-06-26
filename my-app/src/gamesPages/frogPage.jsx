@@ -1,18 +1,18 @@
 import * as React from 'react';
 import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled} from '@mui/material';
-import menu from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/frog3.png';
-import mode from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/frog2.png';
-import gmplay from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/frog4.png';
-import ctrl from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/frog1.png';
-import screen1 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen1.png';
-import screen2 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen2.png';
-import screen3 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen3.png';
-import screen4 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen4.png';
-import screen5 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen5.png';
-import screen6 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen6.png';
-import screen7 from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/game asset img/frog/screenshots/screen7.png';
+import menu from '../image/game asset img/frog/frog3.png';
+import mode from '../image/game asset img/frog/frog2.png';
+import gmplay from '../image/game asset img/frog/frog4.png';
+import ctrl from '../image/game asset img/frog/frog1.png';
+import screen1 from '../image/game asset img/frog/screenshots/screen1.png';
+import screen2 from '../image/game asset img/frog/screenshots/screen2.png';
+import screen3 from '../image/game asset img/frog/screenshots/screen3.png';
+import screen4 from '../image/game asset img/frog/screenshots/screen4.png';
+import screen5 from '../image/game asset img/frog/screenshots/screen5.png';
+import screen6 from '../image/game asset img/frog/screenshots/screen6.png';
+import screen7 from '../image/game asset img/frog/screenshots/screen7.png';
 
-import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/styles/styles';
+import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 
 const PageData = 
     {
@@ -62,59 +62,67 @@ export default function MainContent() {
   return (
     
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <Typography style={{fontFamily:"Metal Mania"}} variant='h1'>{PageData.title}</Typography>
-          <Grid container>
-            <Grid item size={{ xs: 12, md: 3 }}>
-              <Typography variant='h5'>My Role</Typography>
-              <Typography variant='h6'>{PageData.role}</Typography>
-            </Grid>
-            <Grid item size={{ xs: 12, md: 3 }}>
-              <Typography variant='h5'>Team</Typography>
-              <Typography variant='h6'>{PageData.teamData}</Typography>
-            </Grid>
-            <Grid item size={{ xs: 12, md: 3 }}>
-              <Typography variant='h5'>Tools</Typography>
-              <Typography variant='h6'>{PageData.tools}</Typography>
-            </Grid>
-            <Grid item size={{ xs: 12, md: 3 }}>
-              <Typography variant='h5'>Timeline</Typography>
-              <Typography variant='h6'>{PageData.timeline}</Typography>
-            </Grid>
-          </Grid>
-          <Typography variant='h5'>{PageData.blurb}</Typography>
-          <Typography variant='h3'>Process</Typography>
-          <Grid container spacing={2}>
-            <Grid item size={{ xs: 2, sm: 7, md: 4 }}>
-                <Typography variant='h4'>UI/UX</Typography>
-                <Typography variant='h6'>{PageData.myWork}</Typography>
-                <Typography variant='h4'>Productions</Typography>
-                <Typography variant='h6'>{PageData.productions}</Typography>
-                <Typography variant='h4'>Accolades</Typography>
-                <Typography variant='h6'>{PageData.acolades}</Typography>
-            </Grid>
-            <Grid item size={{ xs: 2, sm: 3, md: 4 }}>
-                
-            </Grid>
-          </Grid>
-          <iframe 
-            width="560" 
-            height="315" 
-            src='https://youtu.be/SJQMZu2K6cQ?si=Ncs77j80ukgsq2fN'
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; 
-            autoplay; 
-            clipboard-write; 
-            encrypted-media; 
-            gyroscope; 
-            picture-in-picture; 
-            web-share" allowfullscreen></iframe>
-          
-          
-          <Typography variant='h3'>Assets</Typography>
+      <Typography style={{fontFamily:"Metal Mania"}} variant='h1'>{PageData.title}</Typography>
+      <Grid container>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Typography variant='h5'>My Role</Typography>
+          <Typography variant='h6'>{PageData.role}</Typography>
+        </Grid>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Typography variant='h5'>Team</Typography>
+          <Typography variant='h6'>{PageData.teamData}</Typography>
+        </Grid>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Typography variant='h5'>Tools</Typography>
+          <Typography variant='h6'>{PageData.tools}</Typography>
+        </Grid>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Typography variant='h5'>Timeline</Typography>
+          <Typography variant='h6'>{PageData.timeline}</Typography>
+        </Grid>
+      </Grid>
+      <Typography variant='h5'>{PageData.blurb}</Typography>
+      <Typography variant='h3'>Process</Typography>
+      <Grid container spacing={2}>
+        <Grid item size={{ xs: 2, sm: 7, md: 6 }}>
+            <Typography variant='h4'>UI/UX</Typography>
+            <Typography variant='h6'>{PageData.myWork}</Typography>
+            <Typography variant='h4'>Productions</Typography>
+            <Typography variant='h6'>{PageData.productions}</Typography>
+            <Typography variant='h4'>Accolades</Typography>
+            <Typography variant='h6'>{PageData.acolades}</Typography>
+        </Grid>
+        <Grid item size={{ xs: 2, sm: 3, md: 6 }}>
+          <StyledDiv>
+          <StyledImgLst cols={2}>
+            {PageData.screenshots.map((item) => (
+              <ImageListItem key={item}>
+                <img src={item}/>
+              </ImageListItem>
+            ))}
+          </StyledImgLst >
+          </StyledDiv>
+        </Grid>
+      </Grid>
+      <iframe 
+        width="560" 
+        height="315" 
+        src='https://youtu.be/SJQMZu2K6cQ?si=Ncs77j80ukgsq2fN'
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; 
+        autoplay; 
+        clipboard-write; 
+        encrypted-media; 
+        gyroscope; 
+        picture-in-picture; 
+        web-share" allowfullscreen></iframe>
+      
+      
+      <Typography variant='h3'>Assets</Typography>
 
       <StyledDiv>
-      <StyledImgLst cols={2.5}>
+      <StyledImgLst cols={2}>
         {PageData.assets.map((item) => (
           <ImageListItem key={item}>
             <img src={item}/>

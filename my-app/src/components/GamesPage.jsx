@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea } from '@mui/material';
-import rop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/rop.png';
-import frog from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/frog.png';
-import npip from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/npip.png';
-import gpop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/gpop.png';
-import fright from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/fright.png';
-import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/styles/styles';
+import rop from '../image/rop.png';
+import frog from '../image/frog.png';
+import npip from '../image/npip.png';
+import gpop from '../image/gpop.png';
+import fright from '../image/fright.png';
+import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import {Link} from 'react-router-dom';
 const cardData = [
     {

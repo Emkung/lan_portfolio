@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea } from '@mui/material';
-import gameloop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/Gameloop.png';
-import gap from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/gap.png';
-import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/styles/styles.jsx';
+import gameloop from '../image/Gameloop.png';
+import gap from '../image/gap.png';
+import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles.jsx';
 
 const eventCardData = [
     {

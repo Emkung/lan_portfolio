@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Typography, Grid, Box, CardActionArea } from '@mui/material';
-import rop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/rop.png';
-import frog from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/frog.png';
-import npip from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/npip.png';
-import gameloop from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/image/Gameloop.png';
-import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from 'C:/Users/imlku/Documents/lan_portfolio/my-app/src/styles/styles';
+import rop from '../image/rop.png';
+import frog from '../image/frog.png';
+import npip from '../image/npip.png';
+import gameloop from '../image/Gameloop.png';
+import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import {Link} from 'react-router-dom';
 
 const cardData = [
