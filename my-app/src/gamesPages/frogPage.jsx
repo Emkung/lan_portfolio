@@ -27,7 +27,7 @@ const PageData =
         productions: "While working in a team of 8 and running an LLC with everyone, I assisted with lead producer with keeping everyone on task as well organized periodic meeting for the team members to gather and discuss for the next steps. Finally, I also managed the organizational elements of the team Google Drive and press kit. ",
         assets:[menu, mode, gmplay, ctrl],
         promo:[],
-        screenshots:[screen1, screen2, screen3, screen4, screen5, screen6, screen7],
+        screenshots:[screen1, screen2, screen3, screen5, screen6, screen7],
         vids:['https://youtu.be/SJQMZu2K6cQ?si=Ncs77j80ukgsq2fN','https://youtu.be/RfK-5tOTJ88?si=6pHDVaMQgUjS41FC'],
         showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
         acolades:"This game was chosen as a Showcase Game for the 2024 Boston Festival of Indie Games and was awarded Best Design at the  Northeastern University Games Showcase. Frogmageddon was also played by Vinny Vinesauce after showcasing at PAX East 2024. It also was ranked \#60 / 7,605 for Enjoyment and \#263 / 7,605 Overall in GMTK 2024.",
@@ -94,7 +94,7 @@ export default function MainContent() {
       <Typography variant='h5'>{PageData.blurb}</Typography>
       <Typography variant='h3'>Process</Typography>
       <Grid container spacing={2}>
-        <Grid item size={{ xs: 12, sm: 6, md: 6 }}>
+        <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
             <Typography variant='h4'>UI/UX</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
             <Typography variant='h4'>Productions</Typography>
@@ -102,7 +102,7 @@ export default function MainContent() {
             <Typography variant='h4'>Accolades</Typography>
             <Typography variant='h6'>{PageData.acolades}</Typography>
         </Grid>
-        <Grid item size={{ xs: 12, sm: 6, md: 6 }}>
+        <Grid item size={{ xs: 12, sm: 6, md: 7 }} sx={{display:"flex", alignItems: "center"}}>
           <StyledDiv>
           <StyledImgLst cols={2}>
             {PageData.screenshots.map((item) => (
