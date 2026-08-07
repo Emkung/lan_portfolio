@@ -7,6 +7,8 @@ import About from './components/About';
 import Other from './components/Other';
 import Frogmageddon from './gamesPages/frogPage';
 import Npip from './gamesPages/npipPage';
+import Fright from './gamesPages/frightPage';
+import Rop from './gamesPages/ropPage';
 import { Box, Container, createTheme, ThemeProvider } from '@mui/material';
 import {Routes, Route} from 'react-router-dom';
 
@@ -42,6 +44,8 @@ class App extends Component {
             <Route path="/about" element={<About />}/>
             <Route path="/frogmageddon" element ={<Frogmageddon />}/>
             <Route path="/npip" element ={<Npip />}/>
+            <Route path="/fright" element ={<Fright />}/>
+            <Route path="/rop" element ={<Rop />}/>
           </Routes>
         </Box>
       </ThemeProvider>

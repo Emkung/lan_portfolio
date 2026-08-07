@@ -41,6 +41,7 @@ const jamCardData = [
     role:'UI/UX, Art, Production | itch.io',
     description:
       'UI/UX asset creation and design in addtion to environment assets.',
+    direction: '/rop'
     },
     {
     img: gpop,
@@ -55,6 +56,7 @@ const jamCardData = [
     title: 'Fright House',
     description:
       'UI/UX asset creation and implementation',
+    direction: '/fright'
     }
     
 ]
