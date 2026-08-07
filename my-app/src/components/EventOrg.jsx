@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea } from '@mui/material';
+import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea, Container } from '@mui/material';
 import gameloop from '../image/Gameloop.png';
 import gap from '../image/gap.png';
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles.jsx';
@@ -78,11 +78,16 @@ export default function MainContent() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, height: '100%' }}>
+      <Container
+        maxWidth="xl"
+        component="main"
+        sx={{ display: 'flex', flexDirection: 'column', my: 16, width: '100%', height: '100%' }}>
       <Typography variant='h3'>Events</Typography>
       <Grid container spacing={2} columns={12}>
         {genGameCards(eventCardData)}
       </Grid>
+      </Container>
     </Box>
   );
 }

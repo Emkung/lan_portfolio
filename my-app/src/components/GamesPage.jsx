@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea } from '@mui/material';
+import { Card, CardContent, CardMedia, IconButton, Button, Typography, Grid, Box, styled, CardActionArea, Container } from '@mui/material';
 import rop from '../image/rop.png';
 import frog from '../image/frog.png';
 import npip from '../image/npip.png';
@@ -109,7 +109,11 @@ export default function MainContent() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, backgroundColor: 'transparent' }}>
+      <Container
+        maxWidth="xl"
+        component="main"
+        sx={{ display: 'flex', flexDirection: 'column', my: 16, width: '100%' }}>
       <Typography variant='h3'>Published Games</Typography>
       <Grid container spacing={2} columns={12}>
         {genGameCards(cardData)}
@@ -118,6 +122,7 @@ export default function MainContent() {
         <Grid container spacing={2} columns={12}>
         {genGameCards(jamCardData)}
       </Grid>
+      </Container>
     </Box>
   );
 }

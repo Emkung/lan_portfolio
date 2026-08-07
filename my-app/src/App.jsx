@@ -6,31 +6,43 @@ import EventOrg from './components/EventOrg';
 import About from './components/About';
 import Other from './components/Other';
 import Frogmageddon from './gamesPages/frogPage'
-import { Container } from '@mui/material';
+import { Box, Container, createTheme, ThemeProvider } from '@mui/material';
 import {Routes, Route} from 'react-router-dom';
 
-
+const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 28,
+        },
+        contained: {
+          backgroundColor: "#2A2452"
+        }
+      },
+      defaultProps: {
+        disableElevation: true
+      }
+    }, 
+  },
+});
 
 class App extends Component {
   render() {
     return (
-      <div style={{ width: '100%' }}>
+      <ThemeProvider theme={theme}>
         <AppAppBar/>
-        <Container
-          maxWidth="lg"
-          component="main"
-          sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4, width: '100%' }}>
+        <Box sx={{ height: '100vh', backgroundColor: '#FEFBE2'}}>
           <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/games" element={<GamesPage />}/>
-          <Route path="/event" element={<EventOrg />}/>
-          <Route path="/other" element={<Other />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/frogmageddon" element ={<Frogmageddon />}/>
-        </Routes>
-        </Container>
-        
-      </div>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/games" element={<GamesPage />}/>
+            <Route path="/event" element={<EventOrg />}/>
+            <Route path="/other" element={<Other />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/frogmageddon" element ={<Frogmageddon />}/>
+          </Routes>
+        </Box>
+      </ThemeProvider>
     );
   }
 }

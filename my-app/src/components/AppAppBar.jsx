@@ -6,27 +6,10 @@ import { Toolbar,
     Box, 
     Container,  
     alpha, 
-    styled } from '@mui/material';
+    styled,
+    createTheme, 
+    ThemeProvider} from '@mui/material';
     import {Link} from 'react-router-dom';
-
-
-const StyledToolbar = styled(Toolbar)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  flexShrink: 0,
-  borderRadius: `calc(${theme.shape.borderRadius}px + 8px)`,
-  backdropFilter: 'blur(24px)',
-  border: '1px solid',
-  borderColor: (theme.vars || theme).palette.divider,
-  backgroundColor: theme.vars
-    ? `rgba(${theme.vars.palette.background.defaultChannel} / 0.4)`
-    : alpha(theme.palette.background.default, 0.4),
-  boxShadow: (theme.vars || theme).shadows[1],
-  padding: '8px 12px',
-}));
-
-
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -41,45 +24,34 @@ export default function AppAppBar() {
       enableColorOnDark
       sx={{
         boxShadow: 0,
-        bgcolor: 'transparent',
+        height: '100px',
+        bgcolor: '#E1BD78',
         backgroundImage: 'none',
-        mt: 'calc(var(--template-frame-height, 0px) + 28px)',
       }}
     >
-      <Container maxWidth="lg">
-        <StyledToolbar variant="dense" disableGutters>
-          <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small" component={Link} to={'/'}>
-                Home
-              </Button>
-              <Button variant="text" color="info" size="small" component={Link} to={'/games'}>
-                Games
-              </Button>
-              <Button variant="text" color="info" size="small" component={Link} to={'/event'}>
-                Events
-              </Button>
-              <Button variant="text" color="info" size="small" component={Link} to={'/other'}>
-                Other
-              </Button>
-              <Button variant="text" color="info" size="small" component={Link} to={'/about'}>
-                About
-              </Button>
+      <Box sx={{ display: 'flex', width: '100%', height:'100%', gap:'20px', alignItems: 'center', justifyContent: 'center' }}>
+            <Button variant="contained" size="large" component={Link} to={'/'} style={{ marginLeft: "auto" }}>
+              Home
+            </Button>
+            <Button variant="contained" size="large" component={Link} to={'/games'}>
+              Games
+            </Button>
+            <Button variant="contained" size="large" component={Link} to={'/event'}>
+              Events
+            </Button>
+            <Button variant="contained" size="large" component={Link} to={'/other'}>
+              Other
+            </Button>
+            <Button variant="contained" size="large" component={Link} to={'/about'}>
+              About
+            </Button>
+            <Box
+              sx={{
+                width:'25px',
+              }}
+            >
             </Box>
           </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              gap: 1,
-              alignItems: 'center',
-            }}
-          >
-            <Typography variant="title" color="black">
-              Lan's Portfolio
-           </Typography>
-          </Box>
-        </StyledToolbar>
-      </Container>
     </AppBar>
   );
 }

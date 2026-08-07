@@ -15,6 +15,8 @@ export const StyledCard = styled(Card)(({ theme }) => ({
     outlineColor: 'hsla(210, 98%, 48%, 0.5)',
     outlineOffset: '2px',
   },
+  borderRadius: '3%',
+  padding: '5px'
 }));
 
 export const StyledCardContent = styled(CardContent)({
@@ -25,7 +27,7 @@ export const StyledCardContent = styled(CardContent)({
   flexGrow: 1,
   '&:last-child': {
     paddingBottom: 16,
-  },
+  }
 });
 
 export const StyledTypography = styled(Typography)({
@@ -38,6 +40,11 @@ export const StyledTypography = styled(Typography)({
 
 export const StyledCardMedia = styled(CardMedia)({
     transition: "transform 0.15s ease-in-out",
-    "&:hover": { transform: "scale3d(1.02, 1.02, 1)" }}
-    
+    "&:hover": { transform: "scale3d(1.02, 1.02, 1)" },
+    aspectRatio: '16 / 9',
+    border: '3px solid',
+    borderColor: '#2A2452',
+    borderRadius: '3%',
+    width: '98.5%'
+  }
 )
