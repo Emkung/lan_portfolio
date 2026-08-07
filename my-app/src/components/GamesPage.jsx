@@ -5,6 +5,7 @@ import frog from '../image/frog.png';
 import npip from '../image/npip.png';
 import gpop from '../image/gpop.png';
 import fright from '../image/fright.png';
+import cmccc from '../image/cmccc.png';
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import {Link} from 'react-router-dom';
 const cardData = [
@@ -22,10 +23,18 @@ const cardData = [
     role:'UI/UX, Art | App Store',
     description:
       'UI/UX asset creation and implementation for a mobile application',
+    direction: '/npip'
     }
 ]
 
 const jamCardData = [
+    {
+    img: cmccc,
+    role:'UI/UX, Art | Itch.io',
+    title: 'Count My Coins, Coin Counter!',
+    description:
+      'UI/UX, character, background assets',
+    },
     {
     img: rop,
     title: 'Rites of Purgatory',
@@ -47,6 +56,7 @@ const jamCardData = [
     description:
       'UI/UX asset creation and implementation',
     }
+    
 ]
 
 export default function MainContent() {
@@ -118,7 +128,7 @@ export default function MainContent() {
       <Grid container spacing={2} columns={12}>
         {genGameCards(cardData)}
       </Grid>
-      <Typography variant='h3'>Jam Games</Typography>
+      <Typography variant='h3'>Other Games</Typography>
         <Grid container spacing={2} columns={12}>
         {genGameCards(jamCardData)}
       </Grid>
