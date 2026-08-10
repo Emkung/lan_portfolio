@@ -9,6 +9,8 @@ import Frogmageddon from './gamesPages/frogPage';
 import Npip from './gamesPages/npipPage';
 import Fright from './gamesPages/frightPage';
 import Rop from './gamesPages/ropPage';
+import Cmccc from './gamesPages/cmcccPage';
+import Gpop from './gamesPages/gpopPage';
 import { Box, Container, createTheme, ThemeProvider } from '@mui/material';
 import {Routes, Route} from 'react-router-dom';
 
@@ -46,6 +48,8 @@ class App extends Component {
             <Route path="/npip" element ={<Npip />}/>
             <Route path="/fright" element ={<Fright />}/>
             <Route path="/rop" element ={<Rop />}/>
+            <Route path="/cmccc" element ={<Cmccc />}/>
+            <Route path="/gpop" element ={<Gpop />}/>
           </Routes>
         </Box>
       </ThemeProvider>

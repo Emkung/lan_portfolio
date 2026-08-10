@@ -34,6 +34,7 @@ const jamCardData = [
     title: 'Count My Coins, Coin Counter!',
     description:
       'UI/UX, character, background assets',
+    direction: '/cmccc'
     },
     {
     img: rop,
@@ -49,6 +50,7 @@ const jamCardData = [
     title: 'Duchess Grizabella Nightfire99 in: Prom Panic at Bubblegum Island!',
     description:
       'Character assets and concepts',
+    direction: '/gpop'
     },
     {
     img: fright,
@@ -87,11 +89,10 @@ export default function MainContent() {
                 sx={{
                   aspectRatio: '16 / 9',
                   borderBottom: '1px solid',
-                  borderColor: 'divider',
                 }}
               />
               <StyledCardContent>
-                <Typography gutterBottom variant="h6" component="div">
+                <Typography style={{fontFamily:"DM Serif Display"}} gutterBottom variant="h5" component="div" color='#090823'>
                   {Datalist[i].title}
                 </Typography>
                 <Typography gutterBottom variant='h7'>
@@ -126,11 +127,11 @@ export default function MainContent() {
         maxWidth="xl"
         component="main"
         sx={{ display: 'flex', flexDirection: 'column', my: 16, width: '100%' }}>
-      <Typography variant='h3'>Published Games</Typography>
+      <Typography style={{fontFamily:"DM Serif Display"}} variant='h3' color='#090823'>Published Games</Typography>
       <Grid container spacing={2} columns={12}>
         {genGameCards(cardData)}
       </Grid>
-      <Typography variant='h3'>Other Games</Typography>
+      <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Other Games</Typography>
         <Grid container spacing={2} columns={12}>
         {genGameCards(jamCardData)}
       </Grid>

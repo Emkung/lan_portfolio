@@ -25,6 +25,7 @@ const cardData = [
     role:'UI/UX, Art | App Store',
     description:
       'UI/UX asset creation and implementation for a mobile application',
+    direction: '/npip'
     },
     {
     img: rop,
@@ -32,6 +33,7 @@ const cardData = [
     role:'UI/UX, Art, Production | itch.io',
     description:
       'UI/UX asset creation and design in addtion to environment assets.',
+    direction: '/rop'
     }
 ]
 
@@ -70,7 +72,7 @@ export default function MainContent() {
               image={Datalist[i].img}
             />
             <StyledCardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography style={{fontFamily:"DM Serif Display"}} gutterBottom variant="h5" component="div" color='#090823'>
                 {Datalist[i].title}
               </Typography>
               <Typography gutterBottom variant='h7'>
@@ -112,7 +114,7 @@ export default function MainContent() {
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
               <img src={myname} width={"100%"}></img>
-              <Typography variant="h5" gutterBottom style={{ padding: '20px' }}>I am Lan Kung, a 2D game artist and a community manager. Within my art practices, I mostly focus working as an UI/UX Artist. I eagerly bridge the gaps of communication between not just the developers and players, but also between members in my multi-disciplined teams.
+              <Typography variant="h5" gutterBottom style={{ padding: '20px' }} color='#090823' >I am Lan Kung, a 2D game artist and a community manager. Within my art practices, I mostly focus working as an UI/UX Artist. I eagerly bridge the gaps of communication between not just the developers and players, but also between members in my multi-disciplined teams.
                 I am also a Community Manager, I founded the IGDA Chapter in Smith College and has been organizing events in Boston focused on supporting the Game Developer community in Boston. 
               </Typography>
             </Grid>
@@ -124,11 +126,11 @@ export default function MainContent() {
           maxWidth="lg"
           component="main"
           sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4, width: '100%' }}>
-          <Typography variant='h3'>Games</Typography>
+          <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Games</Typography>
           <Grid container spacing={2} columns={12}>
             {genGameCards(cardData)}
           </Grid>
-          <Typography variant='h3'>Events</Typography>
+          <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Events</Typography>
           <Grid container spacing={2} columns={12}>
             {genGameCards(eventCardData)}
           </Grid>

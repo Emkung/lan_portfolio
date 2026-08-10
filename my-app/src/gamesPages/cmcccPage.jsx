@@ -1,28 +1,27 @@
 import * as React from 'react';
 import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container} from '@mui/material';
-import menu from '../image/game asset img/rop/assets.png';
-import screen1 from '../image/game asset img/rop/screenshots/screen1.png';
-import screen2 from '../image/game asset img/rop/screenshots/screen2.png';
-import screen3 from '../image/game asset img/rop/screenshots/screen3.png';
-import screen4 from '../image/game asset img/rop/screenshots/screen4.png';
-import screen5 from '../image/game asset img/rop/screenshots/screen5.png';
+import menu from '../image/game asset img/npip/assets/asset1.png';
+import screen1 from '../image/game asset img/npip/screenshots/screen1.png';
+import screen2 from '../image/game asset img/npip/screenshots/screen2.png';
+import screen3 from '../image/game asset img/npip/screenshots/screen3.png';
+import screen4 from '../image/game asset img/npip/screenshots/screen4.png';
 
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import YouTube from 'react-youtube';
 
 const PageData = 
     {
-        title: "Rites of Purrgatory",
-        teamData: "6 people",
-        role: "UI Artist, 2D Artist", 
-        tools: "Clip Studio Paint, Trello",
-        timeline: "2 days",
+        title: "Count My Coins, Coin Counter!",
+        teamData: "4 people",
+        role: "2D Artist", 
+        tools: "Clip Studio Paint",
+        timeline: "4 days",
         blurb: "",
-        myWork: "In Rites of Purrgatory, I try to make the UI more illustrative to get the theme and setting of the game across. In the process of making the assets more illustrative I also had to work around making illustrative assets more module. Finally I also worked on the background assets on the map and the main focus of the background is to make the assets reusable without feeling repetitive.",
-        productions: "I managed the team Trello board as well as the Google Drive of the team throughout the project period. I also inform the team of deadlines we need to hit during the project deadline.",
+        myWork: "In this project, it demanded thematic and impactful UI as it is a mobile game, however many of these assets also need to be able to be manipulated by 9 slicing, allowing it the various aspect ratios of tablets and phones. Much of the work is also focused on anchoring different UI elements to the screen so they would look appropriate for different aspect ratios.",
+        productions: "This project was on a tight 2 month production pipeline therefore as a member of the team I also had to help with the managing the group Kanban board as well as organizing our Miro Board. ",
         assets:[menu],
         promo:[],
-        screenshots:[screen1, screen2, screen3, screen4, screen5],
+        screenshots:[screen1, screen2, screen3, screen4],
         showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
     }
 const StyledImgLst = styled(ImageList)(({ theme }) => ({

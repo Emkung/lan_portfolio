@@ -48,7 +48,6 @@ export default function MainContent() {
                   sx={{
                     aspectRatio: '16 / 9',
                     borderBottom: '1px solid',
-                    borderColor: 'divider',
                   }}
                 />
                 <StyledCardContent>
