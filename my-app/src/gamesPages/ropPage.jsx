@@ -60,7 +60,7 @@ export default function MainContent() {
               maxWidth="xl"
               component="main"
               sx={{ display: 'flex', flexDirection: 'column', my: 16, width: '100%', height: '100%' }}>
-      <Typography style={{fontFamily:"DM Serif Display"}} variant='h1'>{PageData.title}</Typography>
+      <Typography style={{fontFamily:"DM Serif Display"}} variant='h1' color='#090823'>{PageData.title}</Typography>
       <Box sx={{ height: '50px' }} ></Box>
       <Grid container>
         <Grid item size={{ xs: 12, md: 3 }}>

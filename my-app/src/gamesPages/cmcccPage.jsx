@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container} from '@mui/material';
 import menu from '../image/game asset img/npip/assets/asset1.png';
-import screen1 from '../image/game asset img/npip/screenshots/screen1.png';
-import screen2 from '../image/game asset img/npip/screenshots/screen2.png';
-import screen3 from '../image/game asset img/npip/screenshots/screen3.png';
-import screen4 from '../image/game asset img/npip/screenshots/screen4.png';
+import screen1 from '../image/game asset img/cmccc/screenshots/screen1.png';
+import screen2 from '../image/game asset img/cmccc/screenshots/screen2.png';
+import screen3 from '../image/game asset img/cmccc/screenshots/screen3.png';
+import screen4 from '../image/game asset img/cmccc/screenshots/screen4.png';
 
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import YouTube from 'react-youtube';
@@ -17,12 +17,12 @@ const PageData =
         tools: "Clip Studio Paint",
         timeline: "4 days",
         blurb: "",
-        myWork: "In this project, it demanded thematic and impactful UI as it is a mobile game, however many of these assets also need to be able to be manipulated by 9 slicing, allowing it the various aspect ratios of tablets and phones. Much of the work is also focused on anchoring different UI elements to the screen so they would look appropriate for different aspect ratios.",
-        productions: "This project was on a tight 2 month production pipeline therefore as a member of the team I also had to help with the managing the group Kanban board as well as organizing our Miro Board. ",
+        myWork: "",
+        productions: "",
         assets:[menu],
         promo:[],
         screenshots:[screen1, screen2, screen3, screen4],
-        showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
+        showcase:"",
     }
 const StyledImgLst = styled(ImageList)(({ theme }) => ({
     flexWrap: 'nowrap',
@@ -88,8 +88,8 @@ export default function MainContent() {
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
             <Typography variant='h4'>UI/UX</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
-            <Typography variant='h4'>Productions</Typography>
-            <Typography variant='h6'>{PageData.productions}</Typography>
+            {/* <Typography variant='h4'>Productions</Typography>
+            <Typography variant='h6'>{PageData.productions}</Typography> */}
         </Grid>
         <Grid item size={{ xs: 12, sm: 6, md: 7 }} sx={{display:"flex", alignItems: "center"}}>
           <StyledDiv>

@@ -14,12 +14,11 @@ const PageData =
         title: "Duchess Grizabella Nightfire99 in: Prom Panic at Bubblegum Island!",
         teamData: "6 people",
         role: "2D Artist", 
-        tools: "Clip Studio Paint, Unity",
+        tools: "Clip Studio Paint",
         timeline: "2 days",
         blurb: "",
-        myWork: "In this project, it demanded thematic and impactful UI as it is a mobile game, however many of these assets also need to be able to be manipulated by 9 slicing, allowing it the various aspect ratios of tablets and phones. Much of the work is also focused on anchoring different UI elements to the screen so they would look appropriate for different aspect ratios.",
-        productions: "This project was on a tight 2 month production pipeline therefore as a member of the team I also had to help with the managing the group Kanban board as well as organizing our Miro Board. ",
-        assets:[menu],
+        myWork: "Directed visual aesthetic of the game. Addiontally, also created concepts for the player character and boss and rendered it.",
+        assets:[],
         promo:[],
         screenshots:[screen1, screen2, screen3, screen4],
         showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
@@ -59,7 +58,7 @@ export default function MainContent() {
               maxWidth="xl"
               component="main"
               sx={{ display: 'flex', flexDirection: 'column', my: 16, width: '100%', height: '100%' }}>
-      <Typography style={{fontFamily:"DM Serif Display"}} variant='h1'>{PageData.title}</Typography>
+      <Typography style={{fontFamily:"DM Serif Display"}} variant='h1' color='#090823'>{PageData.title}</Typography>
       <Box sx={{ height: '50px' }} ></Box>
       <Grid container>
         <Grid item size={{ xs: 12, md: 3 }}>
@@ -82,14 +81,12 @@ export default function MainContent() {
       <Box sx={{ height: '30px' }} ></Box>
       <Typography variant='h5'>{PageData.blurb}</Typography>
       <Box sx={{ height: '50px' }} ></Box>
-      <Typography variant='h3'>Process</Typography>
+      <Typography style={{fontFamily:"DM Serif Display"}} color='#090823' variant='h3'>Process</Typography>
       <Box sx={{ height: '20px' }} ></Box>
       <Grid container spacing={2}>
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
-            <Typography variant='h4'>UI/UX</Typography>
+            <Typography variant='h4'>Art</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
-            <Typography variant='h4'>Productions</Typography>
-            <Typography variant='h6'>{PageData.productions}</Typography>
         </Grid>
         <Grid item size={{ xs: 12, sm: 6, md: 7 }} sx={{display:"flex", alignItems: "center"}}>
           <StyledDiv>
@@ -106,7 +103,7 @@ export default function MainContent() {
       </Container>
       
       <StyledDiv>
-        <Box sx={{
+        {/* <Box sx={{
           background: '#b0c8b8',
           width: "100%",
           position: "absolute",
@@ -125,7 +122,7 @@ export default function MainContent() {
             ))}
           </StyledImgLst >
           </Container>
-        </Box>
+        </Box> */}
       </StyledDiv>
     </Box>
   );

@@ -39,12 +39,12 @@ export default function AppAppBar() {
             <Button variant="contained" size="large" component={Link} to={'/event'}>
               Events
             </Button>
-            <Button variant="contained" size="large" component={Link} to={'/other'}>
+            {/* <Button variant="contained" size="large" component={Link} to={'/other'}>
               Other
-            </Button>
-            <Button variant="contained" size="large" component={Link} to={'/about'}>
+            </Button> */}
+            {/* <Button variant="contained" size="large" component={Link} to={'/about'}>
               About
-            </Button>
+            </Button> */}
             <Box
               sx={{
                 width:'25px',
