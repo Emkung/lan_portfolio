@@ -126,14 +126,14 @@ export default function MainContent() {
           maxWidth="lg"
           component="main"
           sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4, width: '100%' }}>
-          <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Games</Typography>
+          <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Featured Games</Typography>
           <Grid container spacing={2} columns={12}>
             {genGameCards(cardData)}
           </Grid>
-          <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Events</Typography>
+          {/* <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Events</Typography>
           <Grid container spacing={2} columns={12}>
             {genGameCards(eventCardData)}
-          </Grid>
+          </Grid> */}
         </Container>
         <img src={lilguys} style={{
                                       position: 'fixed',

@@ -36,9 +36,9 @@ export default function AppAppBar() {
             <Button variant="contained" size="large" component={Link} to={'/games'}>
               Games
             </Button>
-            <Button variant="contained" size="large" component={Link} to={'/event'}>
+            {/* <Button variant="contained" size="large" component={Link} to={'/event'}>
               Events
-            </Button>
+            </Button> */}
             {/* <Button variant="contained" size="large" component={Link} to={'/other'}>
               Other
             </Button> */}
