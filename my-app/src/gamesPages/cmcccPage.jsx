@@ -17,8 +17,9 @@ const PageData =
         tools: "Clip Studio Paint",
         timeline: "4 days",
         blurb: "",
-        myWork: "",
+        myWork: "I directed the overall aesthetic of the game, created the concepts for the character and render all 2D assets within the game. ",
         productions: "",
+        accolades: "#1 most popular during GMTK 2026 \n 25k browser plays and 5k downloads in first 2 weeks",
         assets:[menu],
         promo:[],
         screenshots:[screen1, screen2, screen3, screen4],
@@ -86,8 +87,10 @@ export default function MainContent() {
       <Box sx={{ height: '20px' }} ></Box>
       <Grid container spacing={2}>
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
-            <Typography variant='h4'>UI/UX</Typography>
+            <Typography variant='h4'>Art</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
+            <Typography variant='h4'>Accolades</Typography>
+            <Typography variant='h6'>{PageData.accolades}</Typography>
             {/* <Typography variant='h4'>Productions</Typography>
             <Typography variant='h6'>{PageData.productions}</Typography> */}
         </Grid>
@@ -105,7 +108,7 @@ export default function MainContent() {
       </Grid>
       </Container>
       
-      <StyledDiv>
+      {/* <StyledDiv>
         <Box sx={{
           background: '#b0c8b8',
           width: "100%",
@@ -126,7 +129,7 @@ export default function MainContent() {
           </StyledImgLst >
           </Container>
         </Box>
-      </StyledDiv>
+      </StyledDiv> */}
     </Box>
   );
 }
